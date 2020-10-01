@@ -5,7 +5,7 @@
         <field name="model">assign.manual.quants</field>
         <field name="arch" type="xml">
             <form>
-                <field name='quants_lines' colspan="4">
+                <!-- <field name='quants_lines' colspan="4">
                     <tree editable="top" delete="0" create="0">
                         <field name="lot_id" groups="stock.group_production_lot" />
                         <field name="quant_id" column_invisible="1" />
@@ -25,7 +25,7 @@
                             sum="qty"
                         />
                     </tree>
-                </field>
+                </field> -->
                 <group col='4' colspan="4">
                     <field name="move_qty" colspan="2" readonly="1" />
                     <field name="lines_qty" invisible="1" />
