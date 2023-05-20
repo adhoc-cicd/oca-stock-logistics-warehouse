@@ -2,9 +2,11 @@
 # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 
 from odoo.exceptions import ValidationError
+from odoo.tests import tagged
 from odoo.tests.common import TransactionCase
 
 
+@tagged("post_install", "-at_install")
 class TestStockQuantManualAssign(TransactionCase):
     @classmethod
     def setUpClass(cls):
