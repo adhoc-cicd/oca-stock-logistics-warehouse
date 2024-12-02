@@ -1,7 +1,7 @@
 # Copyright 2019 Akretion
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from odoo import _, fields, models
+from odoo import fields, models
 from odoo.exceptions import UserError
 
 
@@ -25,7 +25,7 @@ class StockLocation(models.Model):
             self.env["stock.quant"]._unlink_zero_quants()
             if self.mapped("quant_ids"):
                 raise UserError(
-                    _(
+                    self.env._(
                         "It is impossible to prohibit this location from\
                     receiving products as it already contains some."
                     )
