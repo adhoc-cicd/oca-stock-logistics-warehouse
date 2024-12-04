@@ -105,8 +105,9 @@ class StockLocation(models.Model):
                 has_restriction_violation = True
                 restriction_violation_message = _(
                     "This location should only contain items of the same "
-                    "product but it contains items of products {products}"
-                ).format(products=" | ".join(products.mapped("name")))
+                    "product but it contains items of products %(products)s",
+                    products=" | ".join(products.mapped("name")),
+                )
             record.has_restriction_violation = has_restriction_violation
             record.restriction_violation_message = restriction_violation_message
 
