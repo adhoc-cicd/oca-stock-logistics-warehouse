@@ -35,10 +35,9 @@ class StockQuant(models.Model):
                 products = ProductProduct.browse(list(product_ids))
                 error_msgs.append(
                     _(
-                        "The location {location} can only contain items of the same "
+                        "The location %(location)s can only contain items of the same "
                         "product. You plan to put different products into "
-                        "this location. ({products})"
-                    ).format(
+                        "this location. (%(products)s)",
                         location=location.name,
                         products=", ".join(products.mapped("name")),
                     )
