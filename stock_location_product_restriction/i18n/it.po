@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-10-10 10:06+0000\n"
+"PO-Revision-Date: 2024-12-31 15:52+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -83,6 +83,9 @@ msgid ""
 "The location %(location)s can only contain items of the same product. You "
 "plan to put different products into this location. (%(products)s)"
 msgstr ""
+"La posizione %(location)s può contenere solo articoli dello stesso prodotto. "
+"Si è pianificato di mettere prodotti diversi in questa posizione. "
+"(%(products)s)"
 
 #. module: stock_location_product_restriction
 #. odoo-python
@@ -92,6 +95,8 @@ msgid ""
 "This location should only contain items of the same product but it contains "
 "items of products %(products)s"
 msgstr ""
+"Questa ubicazione deve contenere solo elementi dello stesso prodotto ma "
+"contiene elementi dei prodotti %(products)s"
 
 #. module: stock_location_product_restriction
 #: model_terms:ir.ui.view,arch_db:stock_location_product_restriction.stock_location_search_view
@@ -107,6 +112,9 @@ msgid ""
 "the location must only contain items of same product and already contains "
 "items of other product(s) (%(existing_products)s)."
 msgstr ""
+"Si è pianificato di aggiungere il prodotto %(product)s all'ubicazione "
+"%(location)s, ma l'ubicazione deve contenere solo articoli dello stesso "
+"prodotto e contiene già articoli di altri prodotti (%(existing_products)s)."
 
 #, python-format
 #~ msgid ""
