@@ -31,7 +31,7 @@
                 <button
                     type="object"
                     name="action_update_quantity_on_hand"
-                    invisible="type != 'product'"
+                    invisible="type != 'consu' and is_storable"
                     class="oe_stat_button"
                     icon="fa-building-o"
                     groups="stock.group_stock_user"
@@ -63,7 +63,7 @@
                 <button
                     type="object"
                     name="action_update_quantity_on_hand"
-                    invisible="type != 'product'"
+                    invisible="type != 'consu' and is_storable"
                     class="oe_stat_button"
                     icon="fa-building-o"
                     groups="stock.group_stock_user"
