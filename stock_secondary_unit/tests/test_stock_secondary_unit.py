@@ -38,7 +38,8 @@ class TestProductSecondaryUnit(TransactionCase):
                 "name": "test",
                 "uom_id": cls.product_uom_kg.id,
                 "uom_po_id": cls.product_uom_kg.id,
-                "type": "product",
+                "type": "consu",
+                "is_storable": True,
                 "secondary_uom_ids": [
                     (
                         0,
